@@ -15,16 +15,15 @@
 - Gradle 8.7+ или gradle wrapper (генерируется командой ниже)
 
 ## Быстрый старт
+В репозитории уже есть `gradlew/gradlew.bat`. Если вдруг отсутствует, сгенерируйте wrapper (`gradle wrapper --gradle-version 8.7`).
 ```bash
 cd hr-onboarding
-gradle wrapper --gradle-version 8.7   # один раз, если нет gradlew
 ./gradlew test jacocoTestReport       # сборка + тесты + отчет покрытия
 ./gradlew bootRun                     # запуск приложения (останавливать Ctrl+C)
 ```
 Windows PowerShell:
 ```powershell
 cd hr-onboarding
-gradle wrapper --gradle-version 8.7   # если gradlew отсутствует
 .\gradlew.bat test jacocoTestReport
 .\gradlew.bat bootRun
 ```
